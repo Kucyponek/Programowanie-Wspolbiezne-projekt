@@ -1,0 +1,31 @@
+﻿
+<div class="chat" data-chat-websocket="ws://127.0.0.1:8001" data-chat-websocket-notification="@Url.Content("~/Content/Sounds/Pling-KevanGC-1485374730.wav")">
+    <h2 class=" title">Klient RXChat</h2>
+    <p>Zapraszamy do skorzystania z naszego chatu utworzonego na potrzeby projektu z Programowania Wspolbieznego</p>
+    <div class="join-controls">
+        <label>Nick</label><input type="text" class="nick-input" disabled placeholder="Wpisz nick" />
+        <label>Pokoj</label><input type="text" class="chat-room-input" disabled placeholder="Wybierz pokoj" />
+        <button class="join-room" disabled>Dołącz</button>
+    </div>
+    <div class="chat-room">
+        <a class="audio-switch"></a>
+        <div class="chat-log">
+        </div>
+        <div class="chat-participants">
+        </div>
+		<div>
+			<label>Wiadomosc</label>
+			<input type="text" class="message" placeholder="Wyslij wiadomosc" />
+			<button class="send">Wyslij</button>
+		</div>
+        
+    </div>
+</div>
+
+@section scripts {
+<script src="~/Content/Scripts/chat.js"></script>
+}
+
+@section styles{
+<link href="~/Content/Styles/chat.css" rel="stylesheet" />
+}
